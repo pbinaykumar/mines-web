@@ -1,0 +1,284 @@
+body {
+  background-color: black;
+}
+
+/* topbar */
+.home-topbar {
+  height: 40px;
+  width: 100%;
+  background-color: #212121;
+  color: white;
+}
+
+/* home-body-maindiv */
+.home-body-maindiv {
+  width: 90%;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+/* Home */
+.home-title {
+    color: white;
+    padding: 0;
+    font-size: 22px;
+}
+
+/* runningmines-main-div */
+.main-div {
+  border: 2px solid transparent;
+  background: linear-gradient(71deg, #080509, #1a171c, #080509);
+  background-clip: padding-box;
+  border-radius: 45px;
+  padding: 20px 40px;
+  margin-top: 5px;
+}
+
+.main-div-bgcolor {
+  position: relative;
+}
+
+.main-div-bgcolor::after {
+  position: absolute;
+  top: -1px;
+  bottom: -1px;
+  left: -1px;
+  right: -1px;
+  content: "";
+  z-index: -1;
+  border-radius: 45px;
+}
+
+.main-div-bgcolor::after {
+  background: linear-gradient(71deg, #0d1212, #ffffff, #0d1212);
+}
+
+/* runtime mines */
+.runningmines-container {
+  /* max-width: 600px; */
+  margin: 0 auto;
+}
+
+.runningmines-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.runningmines-title {
+  font-size: 24px;
+  font-weight: bold;
+  color: white;
+}
+
+.runningmines-search-container {
+  display: flex;
+  align-items: center;
+}
+
+.runningmines-search-input {
+  padding: 10px;
+  /* border: 1px solid #cbd5e0; */
+  border-radius: 4px 0 0 4px;
+}
+
+.runningmines-search-button {
+  background-color: #4299e1;
+  /* color: #ffffff; */
+  padding: 10px;
+  border: 1px solid #4299e1;
+  border-radius: 0 4px 4px 0;
+  cursor: pointer;
+}
+
+.runningmines-table {
+  width: 100%;
+  border-collapse: collapse;
+  color: white;
+  /* background-color: #ffffff; */
+  /* border: 1px solid #cbd5e0; */
+}
+
+.runningmines-table th,
+.runningmines-table td {
+  padding: 10px;
+  /* border: 1px solid #cbd5e0; */
+  /* border-bottom: 1px solid white; */
+}
+
+.runningmines-table thead {
+  /* background-color: #e2e8f0; */
+  border-bottom: 1px solid white;
+}
+
+.runningmines-bar-container {
+  width: 100%;
+  background-color: #cbd5e0;
+  height: 10px;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.runningmines-bar {
+  height: 100%;
+  background-color: #4299e1;
+}
+
+/* productionDetails.css */
+
+.productiondetails-container {
+  max-width: 800px;
+  margin: 20px auto;
+}
+
+.productiondetails-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.productiondetails-title {
+  font-size: 24px;
+  font-weight: bold;
+  color: white;
+}
+
+.productiondetails-dropdown {
+  padding: 8px;
+  border: 1px solid #cbd5e0;
+  border-radius: 4px;
+}
+
+.productiondetails-chart-container {
+  height: 260px;
+  position: relative;
+}
+
+.productiondetails-tooltip {
+  position: absolute;
+  padding: 8px;
+  background-color: #ffffff;
+  border: 1px solid #cbd5e0;
+  border-radius: 4px;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
+
+.productiondetails-tooltip.active {
+  opacity: 1;
+}
+
+/* production-details-div */
+.production-details-div {
+  margin-top: 10px;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  gap: 10px;
+}
+
+.production-left-segmen {
+  width: 100%;
+}
+
+.production-right-segment {
+  width: 100%;
+}
+
+/* storageCapacity.css */
+
+.storagecapacity-container {
+  width: 300px;
+  margin: 20px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+.storagecapacity-title {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: white;
+}
+
+.storagecapacity-progressbar-container {
+  height: 20px;
+  background-color: #eee;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.storagecapacity-progressbar {
+  height: 100%;
+  transition: width 0.5s ease-in-out;
+}
+
+.storagecapacity-legend {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+}
+
+.legend-color {
+  width: 20px;
+  height: 10px;
+  margin-right: 5px;
+}
+
+/* storage-details-div */
+.storage-details-div {
+  margin-top: 10px;
+  display: grid;
+  grid-template-columns: 70% 30%;
+  gap: 10px;
+}
+
+.storage-left-segmen {
+  width: 100%;
+}
+
+.storage-right-segment {
+  width: 100%;
+}
+
+.notification-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 300px; /* Adjust the width as needed */
+    margin: 20px;
+  }
+  
+  .notification-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: white;
+  }
+  
+  .notification-slide {
+    padding: 10px;
+    border: 1px solid #ddd;
+  }
+  
+  .notification-message {
+    font-size: 16px;
+    margin-bottom: 8px;
+  }
+  
+  .notification-timestamp {
+    font-size: 12px;
+    color: #888;
+  }
+
+  .notification-body{
+    color: white;
+  }
+  
+
