@@ -39,7 +39,7 @@ export const DailyProduction = () => {
         {/* Header */}
         <div className="productiondetails-header">
           <div className="productiondetails-title">
-            Daily Production Details
+            Daily Dumping Details
           </div>
           {/* Dropdown */}
           <select className="productiondetails-dropdown">

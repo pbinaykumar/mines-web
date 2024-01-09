@@ -31,7 +31,8 @@ export const Notification = () => {
         <div className="notification-container">
           <div className="notification-title">Notification</div>
           <div className="notification-body">
-            <p>Truck No. A313 is out from mines</p>
+            <p>- Truck No. A313 is out from mines.</p>
+            <p>- Truck No. B713 dumped the raw material in the dumping yard.</p>
           </div>
         </div>
       </div>

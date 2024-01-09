@@ -7,7 +7,7 @@ export const RunningMines = () => {
         <div className="runningmines-container">
           {/* Header */}
           <div className="runningmines-header">
-            <div className="runningmines-title">Running Project</div>
+            <div className="runningmines-title">Running Mines</div>
             {/* Search Bar */}
             <div className="runningmines-search-container">
               <input

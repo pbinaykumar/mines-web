@@ -18,10 +18,31 @@ body {
 }
 
 /* Home */
+.home-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+  margin-top: 20px;
+}
+
+.home-view-details-button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 5px;
+}
+
+.home-view-details-button:hover {
+  background-color: #0056b3;
+}
 .home-title {
-    color: white;
-    padding: 0;
-    font-size: 22px;
+  color: white;
+  padding: 0;
+  font-size: 20px;
 }
 
 /* runningmines-main-div */
@@ -113,7 +134,7 @@ body {
 
 .runningmines-bar-container {
   width: 100%;
-  background-color: #cbd5e0;
+  background-color: #34495e;
   height: 10px;
   border-radius: 5px;
   overflow: hidden;
@@ -121,7 +142,7 @@ body {
 
 .runningmines-bar {
   height: 100%;
-  background-color: #4299e1;
+  background-color: #3470e8;
 }
 
 /* productionDetails.css */
@@ -186,49 +207,107 @@ body {
 }
 
 /* storageCapacity.css */
-
-.storagecapacity-container {
-  width: 300px;
-  margin: 20px;
-  padding: 20px;
-  border: 1px solid #ccc;
-  border-radius: 8px;
+.storage-main-div {
+  display: grid;
+  grid-template-columns: 40% 60%;
+  gap: 10px;
 }
 
-.storagecapacity-title {
-  font-size: 20px;
-  font-weight: bold;
-  margin-bottom: 10px;
+.storage-container-1 {
+  /* width: 100%; */
   color: white;
 }
 
-.storagecapacity-progressbar-container {
-  height: 20px;
-  background-color: #eee;
-  border-radius: 4px;
-  overflow: hidden;
+.storage-container-1 h2 {
+  margin: 0;
 }
 
-.storagecapacity-progressbar {
-  height: 100%;
-  transition: width 0.5s ease-in-out;
+.storage-container-2 {
+  /* width: 100%; */
+  color: white;
 }
 
-.storagecapacity-legend {
+.parkin-status-main-div {
   display: flex;
-  justify-content: space-between;
-  margin-top: 10px;
-}
-
-.legend-item {
-  display: flex;
+  justify-content: space-around;
   align-items: center;
 }
 
-.legend-color {
-  width: 20px;
-  height: 10px;
-  margin-right: 5px;
+.parking-status-12hr {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.parking-status-24hr {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.parking-status-12hr h3 {
+  margin: 0;
+  color: yellow;
+  font-size: xx-large;
+}
+
+.parking-status-24hr h3 {
+  margin: 0;
+  color: red;
+  font-size: xx-large;
+}
+
+.storage-container-2 h2 {
+  margin: 0;
+}
+
+/* dumping-capacity-styles.css */
+
+.dumping-capacity-container {
+  /* margin: 20px; */
+  /* background-color: #2c3e50; */
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.dumping-capacity-info {
+  color: #ecf0f1;
+  text-align: center;
+}
+
+.dumping-capacity-label {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.dumping-capacity-values {
+  font-size: 16px;
+}
+
+.dumping-capacity-filled {
+  color: #3498db;
+}
+
+.dumping-capacity-max {
+  color: #e74c3c;
+}
+
+.dumping-capacity-progress {
+  margin-top: 15px;
+  height: 15px;
+  background-color: #34495e;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.dumping-capacity-bar {
+  height: 100%;
+  background-color: #3470e8;
+  width: 60%; /* Set the initial width based on the filled value */
+  transition: width 0.5s ease-in-out;
 }
 
 /* storage-details-div */
@@ -248,37 +327,36 @@ body {
 }
 
 .notification-container {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    width: 300px; /* Adjust the width as needed */
-    margin: 20px;
-  }
-  
-  .notification-title {
-    font-size: 18px;
-    font-weight: bold;
-    margin-bottom: 10px;
-    color: white;
-  }
-  
-  .notification-slide {
-    padding: 10px;
-    border: 1px solid #ddd;
-  }
-  
-  .notification-message {
-    font-size: 16px;
-    margin-bottom: 8px;
-  }
-  
-  .notification-timestamp {
-    font-size: 12px;
-    color: #888;
-  }
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 300px; /* Adjust the width as needed */
+  /* margin: 20px; */
+}
 
-  .notification-body{
-    color: white;
-  }
-  
+.notification-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: white;
+  padding: 0;
+}
 
+.notification-slide {
+  padding: 10px;
+  border: 1px solid #ddd;
+}
+
+.notification-message {
+  font-size: 16px;
+  margin-bottom: 8px;
+}
+
+.notification-timestamp {
+  font-size: 12px;
+  color: #888;
+}
+
+.notification-body {
+  color: white;
+}
